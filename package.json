@@ -1,0 +1,29 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "GamerSpace ltd.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmorales26/MS_Back_End.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Alexander Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexmorales26/MS_Back_End/issues"
+  },
+  "homepage": "https://github.com/alexmorales26/MS_Back_End#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
