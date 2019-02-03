@@ -1,9 +1,10 @@
+'use strict';
 const express = require ('express');
 var app = express();
-const port = 8080;
+const port = process.env.port | 8080;
 const hostName='localhost';
 
-app.get('/', (req, res) => res.send('Alexander'))
+app.get('/', function (req, res){ res.send('Alexander')})
 
 
 app.listen(port,hostName,()=> {

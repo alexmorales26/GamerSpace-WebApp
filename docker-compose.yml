@@ -9,12 +9,11 @@ services:
     expose: 
       - ${APP_SERVER_PORT}
     environment: 
-      API_HOST: ${API_HOST}
       APP_SERVER_PORT: ${APP_SERVER_PORT}
     ports:
-        - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
+      - ${APP_SERVER_PORT}:${APP_SERVER_PORT}
     volumes: 
-        - ./server/src:/srv/app/server/src
+      - ./server/src:/srv/app/server/src
     command: npm run start
   ######################
   # Set-up Client Container
@@ -22,7 +21,7 @@ services:
   client:
     build: ./client
     environment:
-      - REACT_APP_PORT=${REACT_APP_PORT}
+      - PORT=${REACT_APP_PORT}
     expose: 
       - ${REACT_APP_PORT}
     ports:
